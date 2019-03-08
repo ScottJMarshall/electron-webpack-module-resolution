@@ -10,4 +10,4 @@ Example of module resolution failure using Electron, Webpack, and external modul
 1. Unable to `require('moment')`.
 2. Adding `require('module').globalPaths.push(process.cwd()+'/node_modules');` resolves the issue.
 3. Running with `export NODE_DEBUG=module` shows resolution paths all rooted in `./electron-webpack-module-resolution/node_modules/electron/dist/Electron.app/Contents/Resources/`
-4. Un-comment first line in `index.js` to add `/node_modules/`
+4. Un-comment first line in `index.js` to add `/node_modules/` to module resolution paths
